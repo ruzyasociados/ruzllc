@@ -1,0 +1,114 @@
+/* Globales */
+/* ================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: auto;
+}
+
+/* Sección Hero */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Ajusta la altura para que ocupe toda la vista del navegador */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../img/edificios.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-attachment: fixed; /* Fija la imagen en su lugar cuando se hace scroll */
+    overflow: hidden;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0; /* Añade un poco de margen para separar los párrafos */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Filtro oscuro para mejorar la legibilidad del texto */
+    z-index: 1;
+}
+
+/* Sección de Tarjetas */
+.cards-section {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem; /* Añade un margen inferior para separar el texto */
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: rgba(37, 58, 117, 0.7); /* Color de fondo con transparencia */
+    backdrop-filter: blur(10px); /* Opcional: Añade un desenfoque al fondo detrás de la barra de navegación */
+}
+
+.navbar-brand {
+    flex: 1; /* Permite que el logo ocupe el espacio necesario */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-item {
+    margin-bottom: 0.5rem; /* Espacio entre los elementos de la lista */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(37, 58, 117, 0.7); /* Mismo color de fondo para el menú desplegable */
+    }
+}
