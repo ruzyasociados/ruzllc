@@ -9,7 +9,7 @@ body {
 
 /* Barra de Navegación */
 .navbar {
-    background-color: rgba(37, 58, 117, 0.787); /* Color de fondo con transparencia */
+    background-color: rgba(36, 36, 36, 0.787); /* Color de fondo con transparencia */
     backdrop-filter: blur(10px); /* Opcional: Añade un desenfoque al fondo detrás de la barra de navegación */
     transition: top 0.3s; /* Animación para ocultar y mostrar la barra de navegación */
 }
