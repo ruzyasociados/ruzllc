@@ -52,7 +52,7 @@ body {
 /* Sección Intro */
 .intro-section {
     position: relative;
-    height: 100vh; /* Ajusta la altura para que ocupe toda la vista del navegador */
+    height: 65vh; /* Ajusta la altura para que ocupe toda la vista del navegador */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,8 +69,6 @@ body {
     z-index: 2;
     color: white;
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
-                 -2px -2px 4px rgba(255, 255, 255, 0.2);
 }
 
 .intro-text h1 {
@@ -159,6 +157,7 @@ body {
 }
 /* Botón "Read More" */
 .btn-read-more {
+    font-weight: normal;
     display: inline-block;
     margin-top: 0px;
     padding: 10px 20px;
@@ -292,7 +291,7 @@ body {
 /* Sección "Contáctanos" */
 .contact-section {
     padding: 60px 20px;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
