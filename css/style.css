@@ -163,8 +163,8 @@ body {
     margin-top: 0px;
     padding: 10px 20px;
     font-size: 1.25rem;
-    color: white;
-    background-color: #253A75;
+    color: rgb(40, 40, 40);
+    background-color: #ffffff;
     border: 2px solid transparent;
     border-radius: 5px;
     text-decoration: none;
@@ -186,7 +186,7 @@ body {
 }
 
 .btn-read-more:hover {
-    background-color: rgba(37, 58, 117, 0.7); /* Color de fondo con transparencia */
+    background-color: rgba(40, 40, 40, 0.7); /* Color de fondo con transparencia */
     backdrop-filter: blur(10px);
     color: #ffffff;
     transform: scale(1.05);
@@ -228,7 +228,7 @@ body {
 
 /* Sección de llamada a la acción */
 .cta-section {
-    background-color: #253a75; /* Fondo oscuro */
+    background-color: #404040; /* Fondo oscuro */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -371,7 +371,7 @@ body {
 
 /* Sección de Derechos de Autor (Footer) */
 .footer-section {
-    background-color: #253A75; /* Fondo oscuro */
+    background-color: #404040; /* Fondo oscuro */
     padding: 20px 0;
     text-align: center;
     color: #ffffff; /* Texto en blanco */
