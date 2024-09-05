@@ -1,9 +1,9 @@
 {
-    "short_name": "MiApp",
-    "name": "Mi Aplicación Web Progresiva",
+    "short_name": "RUZ",
+    "name": "Ruz y Asociados | APP",
     "icons": [
       {
-        "src": "/path/to/icon.png",
+        "src": "img/icon/icono-ruz-b.png",
         "sizes": "192x192",
         "type": "image/png"
       }

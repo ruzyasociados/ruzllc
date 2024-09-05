@@ -409,6 +409,12 @@ body {
     .btn-read-more {
         font-size: 1rem; /* Ajusta el tamaño del botón "Read More" */
     }
+    .card-text{
+        font-size: 0.5rem;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
 }
 /* Ajuste para pantallas pequeñas */
 @media (max-width: 768px) {
@@ -422,6 +428,22 @@ body {
 
     .btn-read-more {
         font-size: .9rem; /* Tamaño de fuente más pequeño */
+    }
+    .cta-text {
+        font-size: 1rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        margin: 10px;
+    }
+
+    #boton-know {
+        font-size: 0.9rem; /* Ajusta el tamaño del botón en pantallas pequeñas */
+        padding: 8px 16px;
+        margin: 10px;
+    }
+    .card-text{
+        font-size: 0.5rem;
+    }
+    .card-title{
+        font-size: 1rem;
     }
 }
 
@@ -437,5 +459,12 @@ body {
 
     .btn-read-more {
         font-size: 0.7rem; /* Reduce más el tamaño del botón */
+    }
+
+    .card-text{
+        font-size: 0.5rem;
+    }
+    .card-title{
+        font-size: 1rem;
     }
 }
