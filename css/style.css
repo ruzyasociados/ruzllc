@@ -39,13 +39,21 @@ body {
     margin-bottom: 0.5rem; /* Espacio entre los elementos de la lista */
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     .navbar-collapse {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background-color: rgba(37, 58, 117, 0.7); /* Mismo color de fondo para el menú desplegable */
+        background-color: rgba(30, 30, 30, 0.9); /* Mismo color de fondo para el menú desplegable */
+        backdrop-filter: blur(10px);
+        transition: top 0.3s;
+    }
+    .navbar-toggler{
+        right: 20px;
+    }
+    .navbar-brand{
+        justify-content: center;
     }
 }
 
@@ -93,6 +101,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Filtro oscuro para mejorar la legibilidad del texto */
     z-index: 1;
 }
+
 
 /* "About Us" */
 .img-container {
@@ -155,6 +164,7 @@ body {
 #justify{
     text-align: justify;
 }
+
 /* Botón "Read More" */
 .btn-read-more {
     font-weight: normal;
@@ -385,4 +395,47 @@ body {
 .footer-text {
     font-size: 1rem;
     margin: 0;
+}
+/* -------ajuste de pantalla-------- */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .intro-text h1 {
+        font-size: 2.5rem; /* Ajusta el tamaño del título para pantallas medianas */
+    }
+
+    .intro-text p {
+        font-size: 1.2rem; /* Ajusta el tamaño del párrafo */
+    }
+
+    .btn-read-more {
+        font-size: 1rem; /* Ajusta el tamaño del botón "Read More" */
+    }
+}
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .intro-text h1 {
+        font-size: 2rem; /* Reduce el tamaño de la fuente del título */
+    }
+
+    .intro-text p {
+        font-size: 1rem; /* Reduce el tamaño de la fuente del párrafo */
+    }
+
+    .btn-read-more {
+        font-size: .9rem; /* Tamaño de fuente más pequeño */
+    }
+}
+
+/* Ajuste adicional para pantallas aún más pequeñas */
+@media (max-width: 576px) {
+    .intro-text h1 {
+        font-size: 1.5rem; /* Reduce aún más el título */
+    }
+
+    .intro-text p {
+        font-size: 0.9rem; /* Reduce más el tamaño del párrafo */
+    }
+
+    .btn-read-more {
+        font-size: 0.7rem; /* Reduce más el tamaño del botón */
+    }
 }
