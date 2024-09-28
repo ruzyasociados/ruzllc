@@ -153,7 +153,7 @@ body {
 
 .container h5{
     font-size: 35px;
-    color: #253A75;
+    color: #1e1e1e;
 }
 
 .container p{
@@ -225,7 +225,6 @@ body {
 
 .card-title {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
 }
 
 .card-text {
@@ -263,7 +262,7 @@ body {
     display: flex;
     align-items: center;
     padding: 40px 20px;
-    background-color: #253A75; /* Color de fondo suave */
+    background-color: #1e1e1e; /* Color de fondo suave */
 }
 
 .about-content {
@@ -315,7 +314,7 @@ body {
 
 .contact-title {
     font-size: 2rem;
-    color: #253A75;
+    color: #1e1e1e;
     margin-bottom: 20px;
 }
 
@@ -346,12 +345,12 @@ body {
 }
 
 .contact-form .form-control:focus {
-    border-color: #253A75;
+    border-color: #1e1e1e;
     outline: none;
 }
 
 .btn-submit {
-    background-color: #253A75;
+    background-color: #1e1e1e;
     color: #fff;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -362,14 +361,14 @@ body {
 }
 
 .btn-submit:hover {
-    background-color: rgba(37, 58, 117, 0.8);
+    background-color: rgba(80, 80, 80, 0.8);
 }
 
 .contact-text {
     text-decoration: none; /* Quita el subrayado */
     color: inherit; /* Hereda el color del texto circundante */
     transition: transform 0.3s ease; /* Añade una transición suave para el efecto de crecimiento */
-    color: #253A75;
+    color: #1e1e1e;
 }
 
 .contact-text:hover {
