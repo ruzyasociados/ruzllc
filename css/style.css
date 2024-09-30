@@ -20,6 +20,11 @@ body {
     align-items: center;
 }
 
+#navbarS a{
+    font-size: 18px !important;
+    color: #fff;
+}
+
 .navbar-toggler {
     position: absolute;
     right: 0;
