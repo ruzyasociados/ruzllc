@@ -299,10 +299,10 @@ body {
 
 /* Sección "Contáctanos" */
 .contact-section {
-    padding: 60px 20px;
+    padding: 50px;
     background-color: #ffffff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -322,6 +322,10 @@ body {
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 40px;
+}
+
+.contact-form{
+    margin-top: 20px;
 }
 
 .contact-form .form-group {
@@ -349,6 +353,12 @@ body {
     outline: none;
 }
 
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
 .btn-submit {
     background-color: #1e1e1e;
     color: #fff;
@@ -364,6 +374,11 @@ body {
     background-color: rgba(80, 80, 80, 0.8);
 }
 
+.centered-text {
+    max-width: 80%;
+    font-size: 18px;
+}
+
 .contact-text {
     text-decoration: none; /* Quita el subrayado */
     color: inherit; /* Hereda el color del texto circundante */
@@ -374,6 +389,23 @@ body {
 .contact-text:hover {
     transform: scale(1.1); /* Escala el enlace al 110% cuando se hace hover */
 }
+
+/* Left column: Contact form */
+.col-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Right column: Centered text */
+.col-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+}
+
 
 
 
@@ -465,5 +497,23 @@ body {
     }
     .card-title{
         font-size: 1rem;
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .col-left, .col-right {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .centered-text {
+        max-width: 100%;
     }
 }
