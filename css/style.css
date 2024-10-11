@@ -292,13 +292,14 @@ body {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 .contact-content {
     max-width: 600px;
     width: 100%;
-    text-align: center;
+    text-align: justify;
 }
 
 .contact-title {
@@ -313,7 +314,7 @@ body {
     margin-bottom: 40px;
 }
 
-.contact-form{
+.contact-form {
     margin-top: 20px;
 }
 
@@ -342,12 +343,6 @@ body {
     outline: none;
 }
 
-.form-control {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-
 .btn-submit {
     background-color: #1e1e1e;
     color: #fff;
@@ -368,33 +363,38 @@ body {
     font-size: 18px;
 }
 
+.centered-text {
+    max-width: 80%;
+    font-size: 18px;
+}
+
 .contact-text {
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Hereda el color del texto circundante */
-    transition: transform 0.3s ease; /* Añade una transición suave para el efecto de crecimiento */
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
     color: #1e1e1e;
 }
 
 .contact-text:hover {
-    transform: scale(1.1); /* Escala el enlace al 110% cuando se hace hover */
+    transform: scale(1.1);
 }
 
-/* Left column: Contact form */
+/* Columna Izquierda: Formulario de Contacto */
 .col-left {
     flex: 1;
     margin-right: 20px;
+    padding: 20px;
 }
 
-/* Right column: Centered text */
+/* Columna Derecha: Texto Centrado */
 .col-right {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding-left: 20px;
+    text-align: justify;
+    padding: 20px;
 }
-
 
 /* Sección de Derechos de Autor (Footer) */
 .footer-section {
@@ -494,6 +494,22 @@ body {
     .card-title{
         font-size: 1rem;
     }
+    .contact-section {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Alinea elementos al centro */
+    }
+
+    .col-left {
+        order: 1; /* col-left estará arriba */
+        margin-right: 0; /* Elimina el margen derecho */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+    }
+
+    .col-right {
+        order: 2; /* col-right estará debajo */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        padding-left: 0; /* Elimina el padding izquierdo */
+    }
 }
 
 /* Ajuste adicional para pantallas aún más pequeñas */
@@ -510,6 +526,24 @@ body {
         font-size: 0.7rem; /* Reduce más el tamaño del botón */
     }
 
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-left, .col-right {
+        margin: 0; /* Elimina los márgenes en dispositivos móviles */
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .centered-text {
+        max-width: 100%; /* Asegura que el texto use todo el ancho disponible */
+    }
+
+    .contact-content {
+        max-width: 100%; /* Asegura que el formulario use todo el ancho disponible */
+    }
+    
     .card-text{
         font-size: 0.5rem;
     }
@@ -526,9 +560,10 @@ body {
     }
 
     .col-left, .col-right {
-        margin: 0;
-        padding: 0;
-        text-align: center;
+        margin: 5;
+        padding: 5;
+        text-align: justify;
+        width: 100%;
     }
 
     .centered-text {
