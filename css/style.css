@@ -382,17 +382,17 @@ body {
 /* Columna Izquierda: Formulario de Contacto */
 .col-left {
     flex: 1;
-    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
     padding: 20px;
 }
 
 /* Columna Derecha: Texto Centrado */
 .col-right {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
+    margin-right: 20px;
     padding: 20px;
 }
 
