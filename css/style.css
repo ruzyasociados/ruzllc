@@ -152,6 +152,14 @@ body {
     text-align: justify;
 }
 
+.justify {
+    text-align: justify; /* Justifica el texto */
+}
+
+.spaced-text {
+    letter-spacing: 0.1em; /* Ajusta el valor según tus necesidades */
+}
+
 /* Botón "Read More" */
 .btn-read-more {
     font-weight: normal;
