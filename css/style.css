@@ -141,14 +141,12 @@ body {
 }
 
 .container h5{
-    font-size: 35px;
+    font-size: 25px;
     color: #1e1e1e;
 }
 
 .container p{
-    text-align: justify;
     font-size: larger;
-    text-align: center;
 }
 #justify{
     text-align: justify;
