@@ -1,18 +1,20 @@
 let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
+const scrollThreshold = 50; // Margen de error para el desplazamiento
 
 window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
+    if (scrollTop > lastScrollTop + scrollThreshold) {
         // Desplazamiento hacia abajo: Ocultar la barra de navegación
         navbar.style.top = '-80px'; // Ajusta la altura de la barra de navegación según sea necesario
-    } else {
+    } else if (scrollTop < lastScrollTop - scrollThreshold) {
         // Desplazamiento hacia arriba: Mostrar la barra de navegación
         navbar.style.top = '0';
     }
     lastScrollTop = scrollTop;
 });
+
 // Cerrar el menú de navegación al hacer clic en un enlace
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 // Cerrar el menú de navegación al hacer clic fuera de él
 document.addEventListener('click', function(event) {
     const navbarCollapse = document.getElementById('navbarS');
