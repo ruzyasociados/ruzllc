@@ -296,6 +296,22 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.button-container {
+    display: flex; /* Usamos flexbox para centrar */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Ajusta el margen según lo necesites */
+}
+
+.btn-services{
+    /* Aquí puedes agregar estilos personalizados para tu botón */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #404040; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Esquinas redondeadas */
+    align-items: center;
+}
+
 /* Sección "Contáctanos" */
 .contact-section {
     padding: 50px;
@@ -525,7 +541,8 @@ body {
 /* Ajuste adicional para pantallas aún más pequeñas */
 @media (max-width: 576px) {
     .intro-text h1 {
-        font-size: 1.5rem; /* Reduce aún más el título */
+        font-size: 2rem; /* Reduce aún más el título */
+
     }
 
     .intro-text p {
