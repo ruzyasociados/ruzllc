@@ -10,6 +10,7 @@ body {
 /* Barra de Navegación */
 .navbar {
     background-color: rgba(36, 36, 36, 0.787); /* Color de fondo con transparencia */
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px); /* Opcional: Añade un desenfoque al fondo detrás de la barra de navegación */
     transition: top 0.3s; /* Animación para ocultar y mostrar la barra de navegación */
 }
@@ -187,10 +188,12 @@ body {
     right: 10px; /* Posiciona la flecha en el borde derecho del botón */
     top: 50%;
     transform: translateY(-50%); /* Centra verticalmente la flecha */
+    border-color: #404040;
 }
 
 .btn-read-more:hover {
     background-color: rgba(40, 40, 40, 0.7); /* Color de fondo con transparencia */
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     color: #ffffff;
     transform: scale(1.05);
@@ -235,26 +238,20 @@ body {
 
 /* Sección de llamada a la acción */
 .cta-section {
-    background-color: #404040; /* Fondo oscuro */
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #404040; /* Fondo oscuro */
 }
 
 .cta-text {
+    margin-bottom: 0;
+    margin-right: 20px; /* Espacio entre el texto y el botón */
     color: #fff;
-    font-size: 1.5rem;
-    margin: 80px;
+    font-size: 20px !important;
 }
 
-#boton-know{
-    margin-right: 80px;
-    align-items: center;
-    justify-content: center;
-
+.btn-read-more {
+    margin-left: auto; /* Asegura que el botón no esté pegado a la derecha */
 }
-
 
 /* Sección "Who We Are" */
 .about-section {
@@ -310,6 +307,14 @@ body {
     text-decoration: none; /* Sin subrayado */
     border-radius: 5px; /* Esquinas redondeadas */
     align-items: center;
+}
+
+.btn-services:hover{
+    background-color: rgb(40, 40, 40); /* Color de fondo con transparencia */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    transform: scale(1.05);
 }
 
 /* Sección "Contáctanos" */
@@ -405,7 +410,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Columna Izquierda: Formulario de Contacto */
 .col-left {
     flex: 1;
     display: flex;
@@ -415,11 +419,12 @@ body {
     padding: 20px;
 }
 
-/* Columna Derecha: Texto Centrado */
 .col-right {
-    flex: 1;
-    margin-right: 20px;
-    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
 }
 
 /* Sección de Derechos de Autor (Footer) */
@@ -476,6 +481,7 @@ body {
         left: 0;
         right: 0;
         background-color: rgba(30, 30, 30, 0.9); /* Mismo color de fondo para el menú desplegable */
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         transition: top 0.3s;
     }
@@ -538,11 +544,9 @@ body {
     }
 }
 
-/* Ajuste adicional para pantallas aún más pequeñas */
 @media (max-width: 576px) {
     .intro-text h1 {
         font-size: 2rem; /* Reduce aún más el título */
-
     }
 
     .intro-text p {
@@ -554,8 +558,8 @@ body {
     }
 
     .contact-section {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Cambia a fila para mantener las columnas lado a lado */
+        align-items: flex-end; /* Alinea el contenido al inicio */
     }
 
     .col-left, .col-right {
@@ -571,13 +575,15 @@ body {
         max-width: 100%; /* Asegura que el formulario use todo el ancho disponible */
     }
     
-    .card-text{
+    .card-text {
         font-size: 0.5rem;
     }
-    .card-title{
+
+    .card-title {
         font-size: 1rem;
     }
 }
+
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
