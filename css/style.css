@@ -557,10 +557,6 @@ body {
         font-size: 0.7rem; /* Reduce más el tamaño del botón */
     }
 
-    .contact-section {
-        flex-direction: row; /* Cambia a fila para mantener las columnas lado a lado */
-        align-items: flex-end; /* Alinea el contenido al inicio */
-    }
 
     .col-left, .col-right {
         margin: 0; /* Elimina los márgenes en dispositivos móviles */
