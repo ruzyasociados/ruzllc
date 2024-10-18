@@ -48,12 +48,12 @@ body {
 /* Sección Intro */
 .intro-section {
     position: relative;
-    height: 65vh; 
+    height: 50vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('../img/edificios.jpg'); 
+    background-image: url('../img/edificios.webp'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
