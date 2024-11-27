@@ -183,7 +183,7 @@
                             <a href="tel:01 800 0010 RUZ" class="contact-text text-center">01 800 0010 RUZ</a>
                             <br>
                         </p>
-                        <form class="contact-form">
+                        <form class="contact-form" action="https://formsubmit.co/contact@ruzllc.com" method="POST">
                             <div class="form-group">
                                 <input type="text" id="name" name="name" class="form-control" placeholder="Name"
                                     required>
@@ -200,7 +200,9 @@
                                     placeholder="Message" required></textarea>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button type="submit" class="btn btn-services">SUBMIT</button>
+                                <input type="submit" class="btn btn-services" value="Submit">
+                                <input type="hidden" name="_next" value="https://ruzllc.com/">
+                                <input type="hidden" name="_captcha" value="false">
                             </div>
                         </form>
                     </div>
