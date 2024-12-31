@@ -450,6 +450,15 @@ body {
     align-items: center; /* Centra horizontalmente el contenido */
 }
 
+.form-group select {
+    width: 120px; /* Ajusta el tamaño del select para la lada */
+  }
+  
+  .form-group input[type="tel"] {
+    flex: 1;
+    margin-left: 10px; /* Espacio entre el código de país y el número */
+  }
+
 /* Sección de Derechos de Autor (Footer) */
 .footer-section {
     background-color: #404040; /* Fondo oscuro */
